@@ -1,0 +1,7 @@
+/home/james/Documents/Development/cpython/vba/CMakeFiles/atlantis.dir
+/home/james/Documents/Development/cpython/vba/CMakeFiles/atlantis_test.dir
+/home/james/Documents/Development/cpython/vba/CMakeFiles/fex.dir
+/home/james/Documents/Development/cpython/vba/CMakeFiles/gvbam.dir
+/home/james/Documents/Development/cpython/vba/po/gvbam/CMakeFiles/gvbam_translations.dir
+/home/james/Documents/Development/cpython/vba/CMakeFiles/vbam.dir
+/home/james/Documents/Development/cpython/vba/CMakeFiles/vbamcore.dir
