@@ -850,7 +850,7 @@ void BIOS_ObjAffineSet()
     dest += offset;
   }
 }
-
+#include <stdio.h>
 void BIOS_RegisterRamReset(u32 flags)
 {
   // no need to trace here. this is only called directly from GBA.cpp
@@ -879,6 +879,7 @@ void BIOS_RegisterRamReset(u32 flags)
       // clean OAM
       memset(oam, 0, 0x400);
     }
+
 
     if(flags & 0x80) {
       int i;

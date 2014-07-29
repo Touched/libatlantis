@@ -92,4 +92,4 @@ extern int systemSaveUpdateCounter;
 extern int systemSpeed;
 #define SYSTEM_SAVE_UPDATED 30
 #define SYSTEM_SAVE_NOT_UPDATED 0
-#endif // SYSTEM_H 
+#endif // SYSTEM_H

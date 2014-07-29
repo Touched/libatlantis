@@ -3285,6 +3285,8 @@ void CPUReset()
   // clean io memory
   memset(ioMem, 0, 0x400);
 
+  //soundReset();
+
   DISPCNT  = 0x0080;
   DISPSTAT = 0x0000;
   VCOUNT   = (useBios && !skipBios) ? 0 :0x007E;
@@ -3400,6 +3402,7 @@ void CPUReset()
   // disable FIQ
   reg[16].I |= 0x40;
 
+
   CPUUpdateCPSR();
 
   armNextPC = reg[15].I;
@@ -3446,6 +3449,7 @@ void CPUReset()
   frameCount = 0;
   saveType = 0;
   layerEnable = DISPCNT & layerSettings;
+
 
   CPUUpdateRenderBuffers(true);
 
@@ -4385,7 +4389,9 @@ void gfxDrawTextScreen(u16 control, u16 hofs, u16 vofs, u32 *line)
 }
 #endif
 
-
+#ifdef WITH_LIBATLANTIS
+extern struct EmulatedSystem GBASystem;
+#else
 struct EmulatedSystem GBASystem = {
   // emuMain
   CPULoop,
@@ -4424,3 +4430,4 @@ struct EmulatedSystem GBASystem = {
   5000
 #endif
 };
+#endif /*WITH_LIBATLANTIS*/

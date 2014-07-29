@@ -11,7 +11,7 @@ public:
 	System();
 	virtual ~System();
 
-	atlantis::Video *video_driver();
+	//atlantis::Video *video_driver();
 
 
 	atlantis::Audio *sound_driver();
@@ -21,7 +21,7 @@ public:
 
 
 private:
-	atlantis::Video *video;
+	//atlantis::Video *video;
 	atlantis::Audio *sound;
 	atlantis::Input *input;
 

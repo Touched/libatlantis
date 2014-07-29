@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/fex.dir/fex/7z_C/7zAlloc.c.o"
   "CMakeFiles/fex.dir/fex/7z_C/7zBuf.c.o"
   "CMakeFiles/fex.dir/fex/7z_C/7zCrc.c.o"
@@ -31,6 +31,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C CXX)
-  INCLUDE(CMakeFiles/fex.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C CXX)
+  include(CMakeFiles/fex.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

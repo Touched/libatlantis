@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/james/Documents/Development/cpython/vba
+CMAKE_SOURCE_DIR = /home/james/Documents/Development/cpython/libatlantis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/james/Documents/Development/cpython/vba
+CMAKE_BINARY_DIR = /home/james/Documents/Development/cpython/libatlantis
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,6 +82,16 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+.PHONY : install/strip/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -103,14 +113,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/james/Documents/Development/cpython/vba && $(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/Development/cpython/vba/CMakeFiles /home/james/Documents/Development/cpython/vba/po/gvbam/CMakeFiles/progress.marks
-	cd /home/james/Documents/Development/cpython/vba && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/Development/cpython/vba/CMakeFiles 0
+	cd /home/james/Documents/Development/cpython/libatlantis && $(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/Development/cpython/libatlantis/CMakeFiles /home/james/Documents/Development/cpython/libatlantis/po/gvbam/CMakeFiles/progress.marks
+	cd /home/james/Documents/Development/cpython/libatlantis && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/Development/cpython/libatlantis/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/james/Documents/Development/cpython/vba && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/clean
+	cd /home/james/Documents/Development/cpython/libatlantis && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/clean
 .PHONY : clean
 
 # The main clean target
@@ -119,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/james/Documents/Development/cpython/vba && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/preinstall
+	cd /home/james/Documents/Development/cpython/libatlantis && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/james/Documents/Development/cpython/vba && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/preinstall
+	cd /home/james/Documents/Development/cpython/libatlantis && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/james/Documents/Development/cpython/vba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/james/Documents/Development/cpython/libatlantis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 po/gvbam/CMakeFiles/gvbam_translations.dir/rule:
-	cd /home/james/Documents/Development/cpython/vba && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/CMakeFiles/gvbam_translations.dir/rule
+	cd /home/james/Documents/Development/cpython/libatlantis && $(MAKE) -f CMakeFiles/Makefile2 po/gvbam/CMakeFiles/gvbam_translations.dir/rule
 .PHONY : po/gvbam/CMakeFiles/gvbam_translations.dir/rule
 
 # Convenience name for target.
@@ -143,7 +153,7 @@ gvbam_translations: po/gvbam/CMakeFiles/gvbam_translations.dir/rule
 
 # fast build rule for target.
 gvbam_translations/fast:
-	cd /home/james/Documents/Development/cpython/vba && $(MAKE) -f po/gvbam/CMakeFiles/gvbam_translations.dir/build.make po/gvbam/CMakeFiles/gvbam_translations.dir/build
+	cd /home/james/Documents/Development/cpython/libatlantis && $(MAKE) -f po/gvbam/CMakeFiles/gvbam_translations.dir/build.make po/gvbam/CMakeFiles/gvbam_translations.dir/build
 .PHONY : gvbam_translations/fast
 
 # Help Target
@@ -156,6 +166,7 @@ help:
 	@echo "... gvbam_translations"
 	@echo "... install"
 	@echo "... install/local"
+	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 .PHONY : help
@@ -169,6 +180,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/james/Documents/Development/cpython/vba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/james/Documents/Development/cpython/libatlantis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

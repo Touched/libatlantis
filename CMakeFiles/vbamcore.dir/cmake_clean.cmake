@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/vbamcore.dir/src/Util.cpp.o"
   "CMakeFiles/vbamcore.dir/src/common/Patch.cpp.o"
   "CMakeFiles/vbamcore.dir/src/common/memgzio.c.o"
@@ -58,6 +58,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C CXX)
-  INCLUDE(CMakeFiles/vbamcore.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C CXX)
+  include(CMakeFiles/vbamcore.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

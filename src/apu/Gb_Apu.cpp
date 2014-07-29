@@ -109,6 +109,7 @@ void Gb_Apu::reset_lengths()
 
 void Gb_Apu::reduce_clicks( bool reduce )
 {
+	return;
 	reduce_clicks_ = reduce;
 
 	// Click reduction makes DAC off generate same output as volume 0
@@ -258,6 +259,7 @@ void Gb_Apu::end_frame( blip_time_t end_time )
 
 void Gb_Apu::silence_osc( Gb_Osc& o )
 {
+	return;
 	int delta = -o.last_amp;
 	if ( delta )
 	{

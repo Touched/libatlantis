@@ -1,12 +1,27 @@
 #ifndef ATLANTIS_H_
 #define ATLANTIS_H_
 
-#include "emulator.h"
+//#include "emulator.h"
+#include "callback.h"
 
-void init(atlantis::Emulator *emu);
+//void init(atlantis::Emulator *emu);
 
-void load(int argc, char **argv);
+int load(const char *szRomPath);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
+void atlantis_load(const char *szRomPath);
+
+void atlantis_finalize();
+
+int atlantis_iteration();
+
+void atlantis_init();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* ATLANTIS_H_ */

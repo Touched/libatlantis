@@ -8,7 +8,7 @@
 namespace test {
 
 System::System() {
-	video = new Video;
+	//video = new Video;
 	sound = new Audio;
 	input = new Input;
 }
@@ -16,9 +16,9 @@ System::System() {
 System::~System() {
 }
 
-atlantis::Video* System::video_driver() {
-	return video;
-}
+//atlantis::Video* System::video_driver() {
+//	return video;
+//}
 
 atlantis::Audio* System::sound_driver() {
 	return sound;

@@ -1,16 +1,20 @@
 # The project's name is VBA-M it uses C and C++ code
 PROJECT(VBA-M C CXX)
 
-cmake_minimum_required( VERSION 2.6.0 )
+#set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_BUILD_TYPE Release)
+
+cmake_minimum_required( VERSION 3.0.0 )
 if( COMMAND cmake_policy )
     cmake_policy( SET CMP0003 NEW )
     cmake_policy( SET CMP0005 OLD )
 endif( COMMAND cmake_policy )
 SET( CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMakeScripts )
 
-option( ENABLE_SDL "Build the SDL port" ON )
+option( ENABLE_SDL "Build the SDL port" OFF )
 option( ENABLE_ATLANTIS "Build the shared library emulator" ON)
-option( ENABLE_GTK "Build the GTK+ GUI" ON )
+option( ENABLE_ATLANTIS_PYTHON "Build the Python modules" ON)
+option( ENABLE_GTK "Build the GTK+ GUI" OFF )
 option( ENABLE_WX "Build the wxWidgets port" OFF )
 option( ENABLE_DEBUGGER "Enable the debugger" ON )
 option( ENABLE_NLS "Enable translations" ON )
@@ -34,6 +38,10 @@ endif(ENABLE_MMX)
 if( NOT ENABLE_DEBUGGER AND ENABLE_SDL )
         message( SEND_ERROR "The SDL port can't be built without debugging support" )
 endif( NOT ENABLE_DEBUGGER AND ENABLE_SDL )
+
+IF ( NOT ENABLE_ATLANTIS AND ENABLE_ATLANTIS_PYTHON )
+    MESSAGE( SEND_ERROR "You must enable libatlantis to build the Python module" )
+ENDIF ( NOT ENABLE_ATLANTIS AND ENABLE_ATLANTIS_PYTHON )
 
 # Set the version number with -DVERSION=X.X.X-uber
 IF( NOT VERSION )
@@ -64,6 +72,22 @@ FIND_PACKAGE ( ZLIB REQUIRED )
 FIND_PACKAGE ( PNG REQUIRED )
 FIND_PACKAGE ( OpenGL REQUIRED )
 FIND_PACKAGE ( SDL REQUIRED )
+
+# Python Dependencies
+IF( ENABLE_ATLANTIS_PYTHON )
+    FIND_PACKAGE ( PkgConfig REQUIRED )
+
+    FIND_PACKAGE ( PythonLibs 3.2 REQUIRED )
+    FIND_PACKAGE ( Cairo REQUIRED)
+    
+    PKG_CHECK_MODULES ( PY3CAIRO REQUIRED py3cairo )
+ENDIF( ENABLE_ATLANTIS_PYTHON )
+
+IF( ENABLE_ATLANTIS )
+    FIND_PACKAGE ( PkgConfig REQUIRED )
+
+    PKG_CHECK_MODULES ( GTK REQUIRED gtk+-3.0 )
+ENDIF( ENABLE_ATLANTIS )
 
 if( ENABLE_LINK )
     FIND_PACKAGE ( SFML REQUIRED )
@@ -298,13 +322,21 @@ SET(SRC_SDL
 SET(SRC_ATLANTIS
     src/atlantis/atlantis.cpp
 	src/atlantis/joypad.cpp
+	src/atlantis/callback.cpp
 )
+
+SET(SRC_ATLANTIS_PYTHON
+    src/python/surface.cpp
+    src/python/module.cpp
+    src/python/emulator.cpp
+)
+
 
 SET(SRC_TEST_BUILD
 	src/test/Audio.cpp
 	src/test/Video.cpp
 	src/test/System.cpp
-	src/test/System.cpp	
+	src/test/Input.cpp	
 	src/test/main.cpp
 )
 
@@ -446,44 +478,83 @@ IF( ENABLE_SDL )
     INSTALL(FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/vba-over.ini DESTINATION ${DATA_INSTALL_DIR})
 ENDIF( ENABLE_SDL )
 
-
-
 IF( ENABLE_ATLANTIS )
 	ADD_LIBRARY (
 		atlantis
 		SHARED
 		${SRC_ATLANTIS}
+        ${PROJECT_SRCS}
+        ${SRC_MAIN}
+        ${SRC_GBA}
+        ${SRC_GB}
+        ${SRC_APU}
+        ${SRC_FILTERS}
+        ${SRC_DEBUGGER}
+	)
+	
+	INCLUDE_DIRECTORIES(
+	    ${GTK_INCLUDE_DIRS}
 	)
 	IF(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
 		ADD_DEFINITIONS(-fPIC)
 	ENDIF(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
 
  	IF( WIN32 )
-        	SET( WIN32_LIBRARIES wsock32 )
-    	ENDIF( WIN32 )
+    	SET( WIN32_LIBRARIES wsock32 )
+	ENDIF( WIN32 )
 
-    	IF( ENABLE_LIRC )
-        	SET( LIRC_CLIENT_LIBRARY lirc_client )
-    	ENDIF( ENABLE_LIRC )
+	IF( ENABLE_LIRC )
+    	SET( LIRC_CLIENT_LIBRARY lirc_client )
+	ENDIF( ENABLE_LIRC )
 
-    	TARGET_LINK_LIBRARIES (
-        	atlantis
-        	${VBAMCORE_LIBS}
-        	${WIN32_LIBRARIES}
-        	${LIRC_CLIENT_LIBRARY}
-    	)
-set(LINK_FLAGS ${LINK_FLAGS} "-Wl,-whole-archive")
-
-	ADD_EXECUTABLE (
-		atlantis_test
-		${SRC_TEST_BUILD}
-	)
 	TARGET_LINK_LIBRARIES (
-        	atlantis_test
-		atlantis
-	)
-		
+    	atlantis
+    	fex
+        ${SDL_LIBRARY}
+        ${SFML_LIBRARY}
+        ${OPENGL_LIBRARIES}
+        ${ZLIB_LIBRARY}
+        ${PNG_LIBRARY}
+    	${WIN32_LIBRARIES}
+    	${LIRC_CLIENT_LIBRARY}
+    	${GTK_LIBRARIES}
+    	)
+
 ENDIF( ENABLE_ATLANTIS )
+
+IF( ENABLE_ATLANTIS_PYTHON )
+	ADD_LIBRARY (
+		pyatlantis
+		SHARED
+		${SRC_ATLANTIS_PYTHON}
+	)
+	IF(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
+		ADD_DEFINITIONS(-fPIC)
+	ENDIF(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
+
+ 	IF( WIN32 )
+    	SET( WIN32_LIBRARIES wsock32 )
+	ENDIF( WIN32 )
+
+	IF( ENABLE_LIRC )
+    	SET( LIRC_CLIENT_LIBRARY lirc_client )
+	ENDIF( ENABLE_LIRC )
+	
+	TARGET_LINK_LIBRARIES (
+	    pyatlantis
+	    fex
+	    atlantis
+	    ${PYTHON_LIBRARIES}
+	    ${CAIRO_LIBRARIES}
+	)
+	
+	INCLUDE_DIRECTORIES(
+	    ${PYTHON_INCLUDE_DIRS}
+	    ${PY3CAIRO_INCLUDE_DIRS}
+	)
+	
+	SET_TARGET_PROPERTIES(pyatlantis PROPERTIES PREFIX "" OUTPUT_NAME "atlantis")
+ENDIF( ENABLE_ATLANTIS_PYTHON )
 
 IF( ENABLE_GTK )
     ADD_EXECUTABLE (

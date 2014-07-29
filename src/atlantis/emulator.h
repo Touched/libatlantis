@@ -18,7 +18,7 @@ public:
 	 * Return a new video driver
 	 */
 
-	virtual Video *video_driver() = 0;
+	//virtual Video *video_driver() = 0;
 
 	/*
 	 * Return a new sound driver

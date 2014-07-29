@@ -1,3 +1,5 @@
+#include "version.h"
+
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -10,8 +12,10 @@
 
 #include "../AutoBuild.h"
 
-#include "../atlantis/emulator.h"
-#include "../atlantis/logger.h"
+#include "emulator.h"
+#include "logger.h"
+#include "audio.h"
+#include "signals.h"
 
 #include "../common/Patch.h"
 #include "../gba/GBA.h"
@@ -124,18 +128,13 @@ int MirroringEnable = 0;
 void systemConsoleMessage(const char*);
 
 void debuggerMain() {
-	printf("Debugger main!\n");
 }
 void debuggerSignal(int sig, int number) {
-	printf("Debugger signal:\t%d\t%d\n", sig, number);
 }
 void debuggerOutput(const char *s, uint32_t addr) {
-	printf("Debugger signal:\t%s\t%08x\n", s, addr);
 }
-void debuggerBreakOnWrite(uint32_t address, uint32_t oldvalue, uint32_t value, int size,
-		int t) {
-	printf("Debugger write:\t%08x\t%08x\t%08x\t%d\t%d\n", address, oldvalue,
-			value, size, t);
+void debuggerBreakOnWrite(uint32_t address, uint32_t oldvalue, uint32_t value,
+		int size, int t) {
 }
 
 void (*dbgMain)() = debuggerMain;
@@ -158,33 +157,37 @@ const char * PreparedCheatCodes[MAX_CHEATS];
 #define _SOUND_ECHO       0.2
 #define _SOUND_STEREO     0.15
 
-void WriteState(int num) {
-//	char * stateName;
-//	if (emulator.emuWriteState)
-//		emulator.emuWriteState(stateName);
+bool writeSaveState(char *szFilename) {
+	if (emulator.emuWriteState)
+		return emulator.emuWriteState(szFilename);
+	return false;
 }
 
-void ReadState(int num) {
-//	char * stateName;
-//
-//	stateName = StateName(num);
-//	if (emulator.emuReadState)
-//		emulator.emuReadState(stateName);
+bool readSaveState(char *szFilename) {
+	if (emulator.emuReadState)
+		return emulator.emuReadState(szFilename);
+	return false;
 }
 
-void WriteBattery() {
-//	char buffer[1048];
-//	emulator.emuWriteBattery(buffer);
+bool writeBattery(char *szFilename) {
+	return emulator.emuWriteBattery(szFilename);
 }
 
-void ReadBattery() {
-//	char buffer[1048];
-//	res = emulator.emuReadBattery(buffer);
+bool readBattery(char *szFilename) {
+	return emulator.emuReadBattery(szFilename);
+}
+
+bool screenshotBitmap(char *szFilename) {
+	return emulator.emuWriteBMP(szFilename);
+}
+
+bool screenshotPNG(char *szFilename) {
+	return emulator.emuWritePNG(szFilename);
 }
 
 void initVideo() {
 	// Set the size of the output buffer
-	atlantis_emulator->video_driver()->resize(srcWidth, srcHeight);
+	//atlantis_emulator->video_driver()->resize(srcWidth, srcHeight);
 
 	int flags;
 	int screenWidth;
@@ -215,10 +218,10 @@ void init(atlantis::Emulator *emu) {
 	atlantis_emulator = emu;
 }
 
-int load(int argc, char **argv) {
+void init() {
 	systemSaveUpdateCounter = SYSTEM_SAVE_NOT_UPDATED;
 
-	arg0 = argv[0];
+	//arg0 = argv[0];
 
 	captureDir[0] = 0;
 	saveDir[0] = 0;
@@ -249,12 +252,12 @@ int load(int argc, char **argv) {
 	rtcEnable(RtcEnable ? true : false);
 	agbPrintEnable(AgbPrint ? true : false);
 
-	if (!debuggerStub) {
-		if (optind >= argc) {
-			systemMessage(0, "Missing image name");
-			exit(-1);
-		}
-	}
+//	if (!debuggerStub) {
+//		if (optind >= argc) {
+//			systemMessage(0, "Missing image name");
+//			exit(-1);
+//		}
+//	}
 
 	for (int i = 0; i < 24;) {
 		systemGbPalette[i++] = (0x1f) | (0x1f << 5) | (0x1f << 10);
@@ -262,24 +265,25 @@ int load(int argc, char **argv) {
 		systemGbPalette[i++] = (0x0c) | (0x0c << 5) | (0x0c << 10);
 		systemGbPalette[i++] = 0;
 	}
-	char szFile[] = "test.gba";
-
 	soundInit();
+}
 
+void load(const char *szRomPath) {
 	bool failed = false;
 
-	IMAGE_TYPE type = utilFindType(szFile);
+	IMAGE_TYPE type = utilFindType(szRomPath);
 
 	if (type == IMAGE_UNKNOWN) {
-		systemMessage(0, "Unknown file type %s", szFile);
+		systemMessage(0, "Unknown file type %s", szRomPath);
 		exit(-1);
 	}
 	cartridgeType = (int) type;
 
 	if (type == IMAGE_GB) {
-		failed = !gbLoadRom(szFile);
+		failed = !gbLoadRom(szRomPath);
 		if (!failed) {
 			gbGetHardwareType();
+			atlantis_signal_gb_load();
 
 			// used for the handling of the gb Boot Rom
 			if (gbHardware & 5)
@@ -290,10 +294,10 @@ int load(int argc, char **argv) {
 			gbReset();
 		}
 	} else if (type == IMAGE_GBA) {
-		int size = CPULoadRom(szFile);
+		int size = CPULoadRom(szRomPath);
 		failed = (size == 0);
 		if (!failed) {
-			//ApplyPerImagePreferences();
+			atlantis_signal_gba_load();
 
 			doMirroring(mirroringEnable);
 
@@ -306,11 +310,11 @@ int load(int argc, char **argv) {
 	}
 
 	if (failed) {
-		systemMessage(0, "Failed to load file %s", szFile);
+		systemMessage(0, "Failed to load file %s", szRomPath);
 		exit(-1);
 	}
 
-	ReadBattery();
+	atlantis_signal_startup();
 
 	if (debuggerStub)
 		remoteInit();
@@ -338,7 +342,6 @@ int load(int argc, char **argv) {
 		srcWidth = 320;
 		srcHeight = 240;
 	}
-
 	initVideo();
 
 	if (systemColorDepth == 15)
@@ -351,8 +354,6 @@ int load(int argc, char **argv) {
 				systemColorDepth);
 		exit(-1);
 	}
-
-	fprintf(stdout, "Color depth: %d\n", systemColorDepth);
 
 	utilUpdateSystemColorMaps();
 
@@ -388,8 +389,11 @@ int load(int argc, char **argv) {
 			}
 		}
 	}
+}
 
-	while (emulating) {
+int iteration() {
+	if (emulating) {
+
 		if (!paused && active) {
 			if (debugger && emulator.emuHasDebugger)
 				dbgMain();
@@ -400,15 +404,18 @@ int load(int argc, char **argv) {
 			sleep(1);
 		}
 		event_loop();
+		return 0;
 	}
+	return 1;
+}
 
+void finalize() {
 	emulating = 0;
-	fprintf(stdout, "Shutting down\n");
 	remoteCleanUp();
 	soundShutdown();
 
 	if (gbRom != NULL || rom != NULL) {
-		WriteBattery();
+		atlantis_signal_shutdown();
 		emulator.emuCleanUp();
 	}
 
@@ -421,13 +428,31 @@ int load(int argc, char **argv) {
 		free(filterPix);
 		filterPix = NULL;
 	}
+}
 
-	return 0;
+extern "C" {
+void atlantis_load(const char *szRomPath) {
+	load(szRomPath);
+}
+
+void atlantis_finalize() {
+	finalize();
+}
+
+int atlantis_iteration() {
+	return iteration();
+}
+
+void atlantis_init() {
+	init();
+}
 }
 
 void systemMessage(int num, const char *msg, ...) {
+
 	va_list valist;
 	va_start(valist, msg);
+	vprintf(msg, valist);
 	atlantis_logger_system(num, msg, valist);
 	va_end(valist);
 }
@@ -442,13 +467,12 @@ void systemDrawScreen() {
 
 	renderedFrames++;
 
-	uint32_t *bytes = (uint32_t*) screen;
-
 	// Skip the first blank line by adjusting the screen pointer
 	uint32_t *pixels = (uint32_t*) (pix + 4 * (srcWidth + 1));
 
 	uint32_t *output = (uint32_t*) malloc(
 			srcWidth * srcHeight * sizeof(uint32_t));
+	uint32_t *ptr = output;
 	for (int y = 0; y < srcHeight; y++) {
 		for (int x = 0; x < srcWidth; x++) {
 			uint32_t pixel = *pixels++;
@@ -469,13 +493,15 @@ void systemDrawScreen() {
 		pixels++;
 	}
 
-	// Don't know what this magic value 0x20 is. Could be systemColorDepth?
-	atlantis_emulator->video_driver()->write(output + 0x20, srcWidth,
-			srcHeight);
+	atlantis_video_frame(ptr, srcWidth, srcHeight);
 }
 
 void systemSetTitle(const char *title) {
 	atlantis_logger_window_title(title);
+}
+
+void systemScreenCapture(int i) {
+
 }
 
 void systemShowSpeed(int speed) {
@@ -521,29 +547,16 @@ void system10Frames(int rate) {
 		}
 	}
 
-	if (systemSaveUpdateCounter) {
-		if (--systemSaveUpdateCounter <= SYSTEM_SAVE_NOT_UPDATED) {
-			WriteBattery();
-			systemSaveUpdateCounter = SYSTEM_SAVE_NOT_UPDATED;
-		}
-	}
+	atlantis_signal_autosave();
 
 	wasPaused = false;
 	autoFrameSkipLastTime = time;
 }
 
-void systemScreenCapture(int a) {
-	//	char buffer[2048];
-	// Call:
-	//		emulator.emuWriteBMP(buffer);
-	// Or
-	//		emulator.emuWritePNG(buffer);
-}
-
 uint32_t systemGetClock() {
 	// TODO: Return a value in milliseconds
 	// This is for timing functions
-	return 0;
+	return time(NULL) * 1000;
 }
 
 void systemGbPrint(uint8_t *data, int len, int pages, int feed, int palette,
@@ -551,10 +564,12 @@ void systemGbPrint(uint8_t *data, int len, int pages, int feed, int palette,
 }
 
 void systemConsoleMessage(const char *msg) {
+	printf("%s\n", msg);
 	atlantis_logger_console(msg);
 }
 
 void systemScreenMessage(const char *msg) {
+	printf("%s\n", msg);
 	atlantis_logger_screen(msg);
 }
 
@@ -582,14 +597,17 @@ void systemGbBorderOn() {
 }
 
 bool systemReadJoypads() {
-	return atlantis_emulator->input_driver()->canRead();
+	//return atlantis_emulator->input_driver()->canRead();
+	return true;
 }
 
 uint32_t systemReadJoypad(int which) {
 	if (which == -1) {
-		return atlantis_emulator->input_driver()->getDefault()->getState();
+		//return atlantis_emulator->input_driver()->getDefault()->getState();
+		return 0;
 	} else {
-		return atlantis_emulator->input_driver()->getPad(which)->getState();
+		//return atlantis_emulator->input_driver()->getPad(which)->getState();
+		return 0;
 	}
 }
 
@@ -617,9 +635,14 @@ int systemGetSensorY() {
 	return 2047;
 }
 
+#include "../common/SoundSDL.h"
+
 SoundDriver * systemSoundInit() {
 	soundShutdown();
-	return (SoundDriver*) (atlantis_emulator->sound_driver());
+	//return (SoundDriver*) (atlantis_emulator->sound_driver());
+	//return NULL;
+	//return new atlantis::Audio();
+	return new SoundSDL();
 }
 
 void systemOnSoundShutdown() {
@@ -629,6 +652,7 @@ void systemOnWriteDataToSoundBuffer(const uint16_t * finalWave, int length) {
 }
 
 void log(const char *defaultMsg, ...) {
+	printf("%s\n", defaultMsg);
 	va_list valist;
 	va_start(valist, defaultMsg);
 	atlantis_logger_format(defaultMsg, valist);

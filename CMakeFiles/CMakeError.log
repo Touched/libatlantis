@@ -1,23 +1,25 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec909692024/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec909692024.dir/build.make CMakeFiles/cmTryCompileExec909692024.dir/build
-make[1]: Entering directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec909692024.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec909692024.dir/CheckSymbolExists.c.o   -c /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec909692024
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec909692024.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec909692024.dir/CheckSymbolExists.c.o  -o cmTryCompileExec909692024 -rdynamic 
-CMakeFiles/cmTryCompileExec909692024.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2243471207/fast"
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2243471207.dir/build.make CMakeFiles/cmTryCompileExec2243471207.dir/build
+make[2]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2243471207.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2243471207.dir/CheckSymbolExists.c.o   -c /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2243471207
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2243471207.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2243471207.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2243471207 -rdynamic 
+CMakeFiles/cmTryCompileExec2243471207.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec909692024] Error 1
-make[1]: Leaving directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec909692024/fast] Error 2
+make[2]: *** [cmTryCompileExec2243471207] Error 1
+make[2]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2243471207/fast] Error 2
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
 
-File /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -33,74 +35,23 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1809324338/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1809324338.dir/build.make CMakeFiles/cmTryCompileExec1809324338.dir/build
-make[1]: Entering directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1809324338.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1809324338.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1809324338
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1809324338.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1809324338.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1809324338 -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3633261449/fast"
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3633261449.dir/build.make CMakeFiles/cmTryCompileExec3633261449.dir/build
+make[2]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3633261449.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3633261449.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3633261449
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3633261449.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3633261449.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3633261449 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec1809324338] Error 1
-make[1]: Leaving directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec1809324338/fast] Error 2
-
-
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1899926085/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1899926085.dir/build.make CMakeFiles/cmTryCompileExec1899926085.dir/build
-make[1]: Entering directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1899926085.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1899926085.dir/CheckSymbolExists.c.o   -c /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec1899926085
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1899926085.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec1899926085.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1899926085 -rdynamic 
-CMakeFiles/cmTryCompileExec1899926085.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
-collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec1899926085] Error 1
-make[1]: Leaving directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec1899926085/fast] Error 2
-
-File /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <pthread.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2227678393/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2227678393.dir/build.make CMakeFiles/cmTryCompileExec2227678393.dir/build
-make[1]: Entering directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2227678393.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2227678393.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2227678393
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2227678393.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2227678393.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2227678393 -rdynamic -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
-collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec2227678393] Error 1
-make[1]: Leaving directory `/home/james/Documents/Development/cpython/vba/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec2227678393/fast] Error 2
+make[2]: *** [cmTryCompileExec3633261449] Error 1
+make[2]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3633261449/fast] Error 2
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
 
 

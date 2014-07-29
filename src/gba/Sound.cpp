@@ -264,6 +264,7 @@ static int gba_to_gb_sound( int addr )
 
 void soundEvent(u32 address, u8 data)
 {
+	//return;
 	int gb_addr = gba_to_gb_sound( address );
 	if ( gb_addr )
 	{
