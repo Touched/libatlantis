@@ -28,9 +28,13 @@ __pycache__
 
 # Other
 *.*~
-CMakeFiles
-CMakeCache.txt
 *.gba
 vbam
-cmake_install.cmake
 .settings
+
+# Cmake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
