@@ -28,6 +28,21 @@ public:
 	int read(u32 address, u32 *out);
 	int read(u32 address, u16 *out);
 	int read(u32 address, u8 *out);
+
+	void enable();
+	void disable();
+private:
+	bool enabled;
+	union Data {
+		u8 elements[6];
+		struct {
+			u16 short1;
+			u16 short2;
+			u16 short3;
+		} registers;
+	};
+
+	Data *data;
 };
 
 #endif /* GPIO_H_ */
