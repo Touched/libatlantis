@@ -24,7 +24,7 @@ public:
 
 	u32 read_word(u32 address);
 	u16 read_hword(u32 address);
-	u16 read_byte(u32 address);
+	u8 read_byte(u32 address);
 	int read(u32 address, u32 *out);
 	int read(u32 address, u16 *out);
 	int read(u32 address, u8 *out);
@@ -33,16 +33,9 @@ public:
 	void disable();
 private:
 	bool enabled;
-	union Data {
-		u8 elements[6];
-		struct {
-			u16 short1;
-			u16 short2;
-			u16 short3;
-		} registers;
-	};
-
-	Data *data;
+	u16 data;
+	u16 direction;
+	u16 control;
 };
 
 #endif /* GPIO_H_ */
