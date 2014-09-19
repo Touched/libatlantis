@@ -29,6 +29,9 @@ public:
 	int read(u32 address, u16 *out);
 	int read(u32 address, u8 *out);
 
+	virtual void onRead();
+	virtual void onWrite();
+
 	void enable();
 	void disable();
 private:

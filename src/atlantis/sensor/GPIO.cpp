@@ -24,6 +24,7 @@ bool GPIO::isEnabled() {
 
 int GPIO::write(u32 address, u32 value) {
 	// TODO: Unimplemented
+	onWrite();
 	return 1;
 }
 
@@ -41,6 +42,7 @@ int GPIO::write(u32 address, u16 value) {
 	default:
 		return 1;
 	}
+	onWrite();
 	return 0;
 }
 
@@ -48,7 +50,7 @@ int GPIO::write(u32 address, u8 value) {
 	/*
 	 * STRB is ignored for ROMX. Silently fail
 	 */
-
+	onWrite();
 	return 0;
 }
 
@@ -58,19 +60,19 @@ int GPIO::write(u32 address, u8 value) {
 
 u32 GPIO::read_word(u32 address) {
 	u32 value = 0;
-	this->read(address, &value);
+	read(address, &value);
 	return value;
 }
 
 u16 GPIO::read_hword(u32 address) {
 	u16 value = 0;
-	this->read(address, &value);
+	read(address, &value);
 	return value;
 }
 
 u8 GPIO::read_byte(u32 address) {
 	u8 value = 0;
-	this->read(address, &value);
+	read(address, &value);
 	return value;
 }
 
@@ -85,6 +87,7 @@ int GPIO::read(u32 address, u32* out) {
 	}
 
 	// TODO: Implement this
+	onRead();
 	return 1;
 }
 
@@ -111,6 +114,7 @@ int GPIO::read(u32 address, u16* out) {
 	default:
 		return 1;
 	}
+	onRead();
 	return 0;
 }
 
@@ -144,11 +148,18 @@ int GPIO::read(u32 address, u8* out) {
 		/* Read failed */
 		return 1;
 	}
+	onRead();
 	return 0;
 }
 
 void GPIO::enable() {
 	enabled = true;
+}
+
+void GPIO::onRead() {
+}
+
+void GPIO::onWrite() {
 }
 
 void GPIO::disable() {
