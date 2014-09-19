@@ -19,6 +19,8 @@ CMakeFiles/atlantis.dir/src/Util.cpp.o: src/gba/GBA.h
 CMakeFiles/atlantis.dir/src/Util.cpp.o: src/gba/Globals.h
 CMakeFiles/atlantis.dir/src/Util.cpp.o: src/gba/RTC.h
 CMakeFiles/atlantis.dir/src/Util.cpp.o: src/gba/gbafilter.h
+CMakeFiles/atlantis.dir/src/Util.cpp.o: /usr/include/libpng12/png.h
+CMakeFiles/atlantis.dir/src/Util.cpp.o: /usr/include/libpng12/pngconf.h
 CMakeFiles/atlantis.dir/src/Util.cpp.o: fex/fex/fex.h
 
 CMakeFiles/atlantis.dir/src/apu/Blip_Buffer.cpp.o: src/apu/Blip_Buffer.cpp
@@ -68,9 +70,7 @@ CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/System.h
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/Util.h
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/atlantis.cpp
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/audio.h
-CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/emulator.h
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/input.h
-CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/joypad.h
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/logger.h
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/signals.h
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: src/atlantis/version.h
@@ -123,8 +123,17 @@ CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o: /usr/include/SDL/close_code
 CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o: src/atlantis/callback.cpp
 CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o: src/atlantis/callback.h
 
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o: src/atlantis/joypad.cpp
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o: src/atlantis/joypad.h
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o: src/atlantis/input.cpp
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o: src/atlantis/input.h
+
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/System.h
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/atlantis/memory.cpp
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/common/Types.h
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/gba/Cheats.h
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/gba/EEprom.h
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/gba/Flash.h
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/gba/GBA.h
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/gba/Globals.h
 
 CMakeFiles/atlantis.dir/src/common/Patch.cpp.o: src/common/Patch.cpp
 CMakeFiles/atlantis.dir/src/common/Patch.cpp.o: src/common/Patch.h

@@ -670,3 +670,123 @@ make[2]: Leaving directory `/home/james/Documents/Development/cpython/libatlanti
 make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
 
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3487268761/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3487268761.dir/build.make CMakeFiles/cmTryCompileExec3487268761.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3487268761.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec3487268761.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3487268761
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3487268761.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec3487268761.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3487268761 -rdynamic -lX11 -lXext 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec564661221/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec564661221.dir/build.make CMakeFiles/cmTryCompileExec564661221.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec564661221.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec564661221.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec564661221
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec564661221.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec564661221.dir/CheckFunctionExists.c.o  -o cmTryCompileExec564661221 -rdynamic 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4119053640/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4119053640.dir/build.make CMakeFiles/cmTryCompileExec4119053640.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4119053640.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec4119053640.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4119053640
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4119053640.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec4119053640.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4119053640 -rdynamic 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1512110016/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1512110016.dir/build.make CMakeFiles/cmTryCompileExec1512110016.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1512110016.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec1512110016.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1512110016
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1512110016.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec1512110016.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1512110016 -rdynamic 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec154943941/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec154943941.dir/build.make CMakeFiles/cmTryCompileExec154943941.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec154943941.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec154943941.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec154943941
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec154943941.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec154943941.dir/CheckFunctionExists.c.o  -o cmTryCompileExec154943941 -rdynamic 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec863687072/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec863687072.dir/build.make CMakeFiles/cmTryCompileExec863687072.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec863687072.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec863687072.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec863687072
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec863687072.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec863687072.dir/CheckFunctionExists.c.o  -o cmTryCompileExec863687072 -rdynamic -lICE 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec94740070/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec94740070.dir/build.make CMakeFiles/cmTryCompileExec94740070.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec94740070.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec94740070.dir/CheckIncludeFiles.c.o   -c /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec94740070
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec94740070.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec94740070.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec94740070 -rdynamic 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec282899647/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec282899647.dir/build.make CMakeFiles/cmTryCompileExec282899647.dir/build
+make[1]: Entering directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec282899647.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec282899647.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec282899647
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec282899647.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec282899647.dir/CheckFunctionExists.c.o  -o cmTryCompileExec282899647 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/james/Documents/Development/cpython/libatlantis/CMakeFiles/CMakeTmp'
+
+

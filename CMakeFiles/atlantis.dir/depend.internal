@@ -20,6 +20,8 @@ CMakeFiles/atlantis.dir/src/Util.cpp.o
  /home/james/Documents/Development/cpython/libatlantis/src/gba/Globals.h
  /home/james/Documents/Development/cpython/libatlantis/src/gba/RTC.h
  /home/james/Documents/Development/cpython/libatlantis/src/gba/gbafilter.h
+ /usr/include/libpng12/png.h
+ /usr/include/libpng12/pngconf.h
  fex/fex/fex.h
 CMakeFiles/atlantis.dir/src/apu/Blip_Buffer.cpp.o
  /home/james/Documents/Development/cpython/libatlantis/src/apu/Blip_Buffer.cpp
@@ -69,9 +71,7 @@ CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o
  /home/james/Documents/Development/cpython/libatlantis/src/Util.h
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/atlantis.cpp
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/audio.h
- /home/james/Documents/Development/cpython/libatlantis/src/atlantis/emulator.h
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/input.h
- /home/james/Documents/Development/cpython/libatlantis/src/atlantis/joypad.h
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/logger.h
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/signals.h
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/version.h
@@ -123,9 +123,18 @@ CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o
 CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/callback.cpp
  /home/james/Documents/Development/cpython/libatlantis/src/atlantis/callback.h
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o
- /home/james/Documents/Development/cpython/libatlantis/src/atlantis/joypad.cpp
- /home/james/Documents/Development/cpython/libatlantis/src/atlantis/joypad.h
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o
+ /home/james/Documents/Development/cpython/libatlantis/src/atlantis/input.cpp
+ /home/james/Documents/Development/cpython/libatlantis/src/atlantis/input.h
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o
+ /home/james/Documents/Development/cpython/libatlantis/src/System.h
+ /home/james/Documents/Development/cpython/libatlantis/src/atlantis/memory.cpp
+ /home/james/Documents/Development/cpython/libatlantis/src/common/Types.h
+ /home/james/Documents/Development/cpython/libatlantis/src/gba/Cheats.h
+ /home/james/Documents/Development/cpython/libatlantis/src/gba/EEprom.h
+ /home/james/Documents/Development/cpython/libatlantis/src/gba/Flash.h
+ /home/james/Documents/Development/cpython/libatlantis/src/gba/GBA.h
+ /home/james/Documents/Development/cpython/libatlantis/src/gba/Globals.h
 CMakeFiles/atlantis.dir/src/common/Patch.cpp.o
  /home/james/Documents/Development/cpython/libatlantis/src/common/Patch.cpp
  /home/james/Documents/Development/cpython/libatlantis/src/common/Patch.h

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o"
-  "CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o"
+  "CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o"
   "CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o"
+  "CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o"
   "CMakeFiles/atlantis.dir/src/Util.cpp.o"
   "CMakeFiles/atlantis.dir/src/common/Patch.cpp.o"
   "CMakeFiles/atlantis.dir/src/common/memgzio.c.o"

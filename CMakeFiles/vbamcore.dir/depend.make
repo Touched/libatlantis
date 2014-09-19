@@ -19,6 +19,8 @@ CMakeFiles/vbamcore.dir/src/Util.cpp.o: src/gba/GBA.h
 CMakeFiles/vbamcore.dir/src/Util.cpp.o: src/gba/Globals.h
 CMakeFiles/vbamcore.dir/src/Util.cpp.o: src/gba/RTC.h
 CMakeFiles/vbamcore.dir/src/Util.cpp.o: src/gba/gbafilter.h
+CMakeFiles/vbamcore.dir/src/Util.cpp.o: /usr/include/libpng12/png.h
+CMakeFiles/vbamcore.dir/src/Util.cpp.o: /usr/include/libpng12/pngconf.h
 CMakeFiles/vbamcore.dir/src/Util.cpp.o: fex/fex/fex.h
 
 CMakeFiles/vbamcore.dir/src/apu/Blip_Buffer.cpp.o: src/apu/Blip_Buffer.cpp

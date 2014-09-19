@@ -12,10 +12,11 @@
 
 #include "../AutoBuild.h"
 
-#include "emulator.h"
 #include "logger.h"
 #include "audio.h"
 #include "signals.h"
+#include "input.h"
+#include "video.h"
 
 #include "../common/Patch.h"
 #include "../gba/GBA.h"
@@ -39,7 +40,6 @@ extern void remoteSetProtocol(int);
 extern void remoteSetPort(int);
 
 // Atlantis global
-atlantis::Emulator* atlantis_emulator = NULL;
 
 int autoFireMaxCount = 1;
 
@@ -211,11 +211,6 @@ void initVideo() {
 }
 
 void event_loop() {
-}
-
-// Set the global variable
-void init(atlantis::Emulator *emu) {
-	atlantis_emulator = emu;
 }
 
 void init() {
@@ -602,13 +597,7 @@ bool systemReadJoypads() {
 }
 
 uint32_t systemReadJoypad(int which) {
-	if (which == -1) {
-		//return atlantis_emulator->input_driver()->getDefault()->getState();
-		return 0;
-	} else {
-		//return atlantis_emulator->input_driver()->getPad(which)->getState();
-		return 0;
-	}
+	return atlantis_input_read_state(which);
 }
 
 void systemUpdateMotionSensor() {

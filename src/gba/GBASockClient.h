@@ -1,6 +1,13 @@
 #pragma once
 
+#define FAKE_SFML // TODO: Remove this line
+
+#ifdef FAKE_SFML
+#include <fakesfml/fake.h>
+#else
 #include <SFML/Network.hpp>
+#endif
+
 #include "../common/Types.h"
 
 class GBASockClient : public sf::SocketTCP

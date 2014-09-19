@@ -10,7 +10,6 @@ void surface_draw(uint32_t* frame, int width, int height) {
 	int stride;
 	int x, y;
 
-
 	data = cairo_image_surface_get_data(surface);
 
 	stride = cairo_image_surface_get_stride(surface);
@@ -39,17 +38,25 @@ PyObject *get_cairo_surface(PyObject *self, PyObject *dummy) {
 }
 
 PyObject *pass_cairo_context(PyObject *self, PyObject *args) {
-	PyObject *context;
+	PyObject *context, *w;
 
-	PyArg_ParseTuple(args, "O", &context);
+	PyArg_ParseTuple(args, "OO", &w, &context);
+
+	//PyObject_Print(PyObject_GetAttrString(w, "queue_draw"), stdout, 0);
+	PyObject_CallMethodObjArgs(w, PyUnicode_InternFromString("queue_draw"), NULL);
 
 	cairo_t *cr = PycairoContext_GET(context);
-
 
 	cairo_set_source_rgb(cr, 0.0, 0.0, 0.0);
 	cairo_paint(cr);
 
-	cairo_set_source_surface(cr, surface, 0, 0);
+	//cairo_set_source_surface(cr, surface, 0, 0);
+	cairo_pattern_t *pattern = cairo_pattern_create_for_surface(surface);
+	cairo_pattern_set_filter(pattern, CAIRO_FILTER_FAST);
+	cairo_matrix_t matrix = {0};
+	cairo_matrix_init_scale(&matrix, 0.5, 0.5);
+	cairo_pattern_set_matrix(pattern, &matrix);
+	cairo_set_source(cr, pattern);
 	cairo_paint(cr);
 
 	Py_RETURN_NONE;

@@ -1039,29 +1039,53 @@ src/atlantis/callback.cpp.s:
 	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.s
 .PHONY : src/atlantis/callback.cpp.s
 
-src/atlantis/joypad.o: src/atlantis/joypad.cpp.o
-.PHONY : src/atlantis/joypad.o
+src/atlantis/input.o: src/atlantis/input.cpp.o
+.PHONY : src/atlantis/input.o
 
 # target to build an object file
-src/atlantis/joypad.cpp.o:
-	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o
-.PHONY : src/atlantis/joypad.cpp.o
+src/atlantis/input.cpp.o:
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o
+.PHONY : src/atlantis/input.cpp.o
 
-src/atlantis/joypad.i: src/atlantis/joypad.cpp.i
-.PHONY : src/atlantis/joypad.i
+src/atlantis/input.i: src/atlantis/input.cpp.i
+.PHONY : src/atlantis/input.i
 
 # target to preprocess a source file
-src/atlantis/joypad.cpp.i:
-	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.i
-.PHONY : src/atlantis/joypad.cpp.i
+src/atlantis/input.cpp.i:
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/input.cpp.i
+.PHONY : src/atlantis/input.cpp.i
 
-src/atlantis/joypad.s: src/atlantis/joypad.cpp.s
-.PHONY : src/atlantis/joypad.s
+src/atlantis/input.s: src/atlantis/input.cpp.s
+.PHONY : src/atlantis/input.s
 
 # target to generate assembly for a file
-src/atlantis/joypad.cpp.s:
-	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.s
-.PHONY : src/atlantis/joypad.cpp.s
+src/atlantis/input.cpp.s:
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/input.cpp.s
+.PHONY : src/atlantis/input.cpp.s
+
+src/atlantis/memory.o: src/atlantis/memory.cpp.o
+.PHONY : src/atlantis/memory.o
+
+# target to build an object file
+src/atlantis/memory.cpp.o:
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o
+.PHONY : src/atlantis/memory.cpp.o
+
+src/atlantis/memory.i: src/atlantis/memory.cpp.i
+.PHONY : src/atlantis/memory.i
+
+# target to preprocess a source file
+src/atlantis/memory.cpp.i:
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.i
+.PHONY : src/atlantis/memory.cpp.i
+
+src/atlantis/memory.s: src/atlantis/memory.cpp.s
+.PHONY : src/atlantis/memory.s
+
+# target to generate assembly for a file
+src/atlantis/memory.cpp.s:
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.s
+.PHONY : src/atlantis/memory.cpp.s
 
 src/common/Patch.o: src/common/Patch.cpp.o
 .PHONY : src/common/Patch.o
@@ -2332,6 +2356,30 @@ src/gba/remote.cpp.s:
 	$(MAKE) -f CMakeFiles/vbamcore.dir/build.make CMakeFiles/vbamcore.dir/src/gba/remote.cpp.s
 .PHONY : src/gba/remote.cpp.s
 
+src/python/debugger.o: src/python/debugger.cpp.o
+.PHONY : src/python/debugger.o
+
+# target to build an object file
+src/python/debugger.cpp.o:
+	$(MAKE) -f CMakeFiles/pyatlantis.dir/build.make CMakeFiles/pyatlantis.dir/src/python/debugger.cpp.o
+.PHONY : src/python/debugger.cpp.o
+
+src/python/debugger.i: src/python/debugger.cpp.i
+.PHONY : src/python/debugger.i
+
+# target to preprocess a source file
+src/python/debugger.cpp.i:
+	$(MAKE) -f CMakeFiles/pyatlantis.dir/build.make CMakeFiles/pyatlantis.dir/src/python/debugger.cpp.i
+.PHONY : src/python/debugger.cpp.i
+
+src/python/debugger.s: src/python/debugger.cpp.s
+.PHONY : src/python/debugger.s
+
+# target to generate assembly for a file
+src/python/debugger.cpp.s:
+	$(MAKE) -f CMakeFiles/pyatlantis.dir/build.make CMakeFiles/pyatlantis.dir/src/python/debugger.cpp.s
+.PHONY : src/python/debugger.cpp.s
+
 src/python/emulator.o: src/python/emulator.cpp.o
 .PHONY : src/python/emulator.o
 
@@ -2355,6 +2403,30 @@ src/python/emulator.s: src/python/emulator.cpp.s
 src/python/emulator.cpp.s:
 	$(MAKE) -f CMakeFiles/pyatlantis.dir/build.make CMakeFiles/pyatlantis.dir/src/python/emulator.cpp.s
 .PHONY : src/python/emulator.cpp.s
+
+src/python/input.o: src/python/input.cpp.o
+.PHONY : src/python/input.o
+
+# target to build an object file
+src/python/input.cpp.o:
+	$(MAKE) -f CMakeFiles/pyatlantis.dir/build.make CMakeFiles/pyatlantis.dir/src/python/input.cpp.o
+.PHONY : src/python/input.cpp.o
+
+src/python/input.i: src/python/input.cpp.i
+.PHONY : src/python/input.i
+
+# target to preprocess a source file
+src/python/input.cpp.i:
+	$(MAKE) -f CMakeFiles/pyatlantis.dir/build.make CMakeFiles/pyatlantis.dir/src/python/input.cpp.i
+.PHONY : src/python/input.cpp.i
+
+src/python/input.s: src/python/input.cpp.s
+.PHONY : src/python/input.s
+
+# target to generate assembly for a file
+src/python/input.cpp.s:
+	$(MAKE) -f CMakeFiles/pyatlantis.dir/build.make CMakeFiles/pyatlantis.dir/src/python/input.cpp.s
+.PHONY : src/python/input.cpp.s
 
 src/python/module.o: src/python/module.cpp.o
 .PHONY : src/python/module.o
@@ -2524,9 +2596,12 @@ help:
 	@echo "... src/atlantis/callback.o"
 	@echo "... src/atlantis/callback.i"
 	@echo "... src/atlantis/callback.s"
-	@echo "... src/atlantis/joypad.o"
-	@echo "... src/atlantis/joypad.i"
-	@echo "... src/atlantis/joypad.s"
+	@echo "... src/atlantis/input.o"
+	@echo "... src/atlantis/input.i"
+	@echo "... src/atlantis/input.s"
+	@echo "... src/atlantis/memory.o"
+	@echo "... src/atlantis/memory.i"
+	@echo "... src/atlantis/memory.s"
 	@echo "... src/common/Patch.o"
 	@echo "... src/common/Patch.i"
 	@echo "... src/common/Patch.s"
@@ -2668,9 +2743,15 @@ help:
 	@echo "... src/gba/remote.o"
 	@echo "... src/gba/remote.i"
 	@echo "... src/gba/remote.s"
+	@echo "... src/python/debugger.o"
+	@echo "... src/python/debugger.i"
+	@echo "... src/python/debugger.s"
 	@echo "... src/python/emulator.o"
 	@echo "... src/python/emulator.i"
 	@echo "... src/python/emulator.s"
+	@echo "... src/python/input.o"
+	@echo "... src/python/input.i"
+	@echo "... src/python/input.s"
 	@echo "... src/python/module.o"
 	@echo "... src/python/module.i"
 	@echo "... src/python/module.s"

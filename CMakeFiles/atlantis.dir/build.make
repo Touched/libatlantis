@@ -72,28 +72,28 @@ CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o.provides: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o.provides.build: CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o
 
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o: CMakeFiles/atlantis.dir/flags.make
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o: src/atlantis/joypad.cpp
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o: CMakeFiles/atlantis.dir/flags.make
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o: src/atlantis/input.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/atlantis/joypad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/atlantis/input.cpp
 
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james/Documents/Development/cpython/libatlantis/src/atlantis/joypad.cpp > CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.i
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlantis.dir/src/atlantis/input.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james/Documents/Development/cpython/libatlantis/src/atlantis/input.cpp > CMakeFiles/atlantis.dir/src/atlantis/input.cpp.i
 
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james/Documents/Development/cpython/libatlantis/src/atlantis/joypad.cpp -o CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.s
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlantis.dir/src/atlantis/input.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james/Documents/Development/cpython/libatlantis/src/atlantis/input.cpp -o CMakeFiles/atlantis.dir/src/atlantis/input.cpp.s
 
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.requires:
-.PHONY : CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.requires
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.requires:
+.PHONY : CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.requires
 
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.provides: CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.requires
-	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.provides.build
-.PHONY : CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.provides
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.provides: CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.requires
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.provides.build
+.PHONY : CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.provides
 
-CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.provides.build: CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o
+CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.provides.build: CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o
 
 CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o: src/atlantis/callback.cpp
@@ -118,9 +118,32 @@ CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o.provides: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o.provides.build: CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o
 
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: CMakeFiles/atlantis.dir/flags.make
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o: src/atlantis/memory.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/atlantis/memory.cpp
+
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/james/Documents/Development/cpython/libatlantis/src/atlantis/memory.cpp > CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.i
+
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/james/Documents/Development/cpython/libatlantis/src/atlantis/memory.cpp -o CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.s
+
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.requires:
+.PHONY : CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.requires
+
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.provides: CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/atlantis.dir/build.make CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.provides.build
+.PHONY : CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.provides
+
+CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.provides.build: CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o
+
 CMakeFiles/atlantis.dir/src/Util.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/Util.cpp.o: src/Util.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/Util.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/Util.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/Util.cpp
 
@@ -143,7 +166,7 @@ CMakeFiles/atlantis.dir/src/Util.cpp.o.provides.build: CMakeFiles/atlantis.dir/s
 
 CMakeFiles/atlantis.dir/src/common/Patch.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/common/Patch.cpp.o: src/common/Patch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/common/Patch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/common/Patch.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/common/Patch.cpp
 
@@ -166,7 +189,7 @@ CMakeFiles/atlantis.dir/src/common/Patch.cpp.o.provides.build: CMakeFiles/atlant
 
 CMakeFiles/atlantis.dir/src/common/memgzio.c.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/common/memgzio.c.o: src/common/memgzio.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/atlantis.dir/src/common/memgzio.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/atlantis.dir/src/common/memgzio.c.o   -c /home/james/Documents/Development/cpython/libatlantis/src/common/memgzio.c
 
@@ -189,7 +212,7 @@ CMakeFiles/atlantis.dir/src/common/memgzio.c.o.provides.build: CMakeFiles/atlant
 
 CMakeFiles/atlantis.dir/src/common/SoundSDL.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/common/SoundSDL.cpp.o: src/common/SoundSDL.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/common/SoundSDL.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/common/SoundSDL.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/common/SoundSDL.cpp
 
@@ -212,7 +235,7 @@ CMakeFiles/atlantis.dir/src/common/SoundSDL.cpp.o.provides.build: CMakeFiles/atl
 
 CMakeFiles/atlantis.dir/src/gba/agbprint.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/agbprint.cpp.o: src/gba/agbprint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/agbprint.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/agbprint.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/agbprint.cpp
 
@@ -235,7 +258,7 @@ CMakeFiles/atlantis.dir/src/gba/agbprint.cpp.o.provides.build: CMakeFiles/atlant
 
 CMakeFiles/atlantis.dir/src/gba/bios.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/bios.cpp.o: src/gba/bios.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/bios.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/bios.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/bios.cpp
 
@@ -258,7 +281,7 @@ CMakeFiles/atlantis.dir/src/gba/bios.cpp.o.provides.build: CMakeFiles/atlantis.d
 
 CMakeFiles/atlantis.dir/src/gba/Cheats.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Cheats.cpp.o: src/gba/Cheats.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Cheats.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Cheats.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Cheats.cpp
 
@@ -281,7 +304,7 @@ CMakeFiles/atlantis.dir/src/gba/Cheats.cpp.o.provides.build: CMakeFiles/atlantis
 
 CMakeFiles/atlantis.dir/src/gba/CheatSearch.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/CheatSearch.cpp.o: src/gba/CheatSearch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/CheatSearch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/CheatSearch.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/CheatSearch.cpp
 
@@ -304,7 +327,7 @@ CMakeFiles/atlantis.dir/src/gba/CheatSearch.cpp.o.provides.build: CMakeFiles/atl
 
 CMakeFiles/atlantis.dir/src/gba/EEprom.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/EEprom.cpp.o: src/gba/EEprom.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/EEprom.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/EEprom.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/EEprom.cpp
 
@@ -327,7 +350,7 @@ CMakeFiles/atlantis.dir/src/gba/EEprom.cpp.o.provides.build: CMakeFiles/atlantis
 
 CMakeFiles/atlantis.dir/src/gba/Flash.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Flash.cpp.o: src/gba/Flash.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Flash.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Flash.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Flash.cpp
 
@@ -350,7 +373,7 @@ CMakeFiles/atlantis.dir/src/gba/Flash.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/GBA.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/GBA.cpp.o: src/gba/GBA.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/GBA.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/GBA.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/GBA.cpp
 
@@ -373,7 +396,7 @@ CMakeFiles/atlantis.dir/src/gba/GBA.cpp.o.provides.build: CMakeFiles/atlantis.di
 
 CMakeFiles/atlantis.dir/src/gba/GBAGfx.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/GBAGfx.cpp.o: src/gba/GBAGfx.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/GBAGfx.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/GBAGfx.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/GBAGfx.cpp
 
@@ -396,7 +419,7 @@ CMakeFiles/atlantis.dir/src/gba/GBAGfx.cpp.o.provides.build: CMakeFiles/atlantis
 
 CMakeFiles/atlantis.dir/src/gba/GBALink.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/GBALink.cpp.o: src/gba/GBALink.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/GBALink.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/GBALink.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/GBALink.cpp
 
@@ -419,7 +442,7 @@ CMakeFiles/atlantis.dir/src/gba/GBALink.cpp.o.provides.build: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/gba/GBASockClient.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/GBASockClient.cpp.o: src/gba/GBASockClient.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/GBASockClient.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/GBASockClient.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/GBASockClient.cpp
 
@@ -442,7 +465,7 @@ CMakeFiles/atlantis.dir/src/gba/GBASockClient.cpp.o.provides.build: CMakeFiles/a
 
 CMakeFiles/atlantis.dir/src/gba/GBA-thumb.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/GBA-thumb.cpp.o: src/gba/GBA-thumb.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/GBA-thumb.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/GBA-thumb.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/GBA-thumb.cpp
 
@@ -465,7 +488,7 @@ CMakeFiles/atlantis.dir/src/gba/GBA-thumb.cpp.o.provides.build: CMakeFiles/atlan
 
 CMakeFiles/atlantis.dir/src/gba/GBA-arm.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/GBA-arm.cpp.o: src/gba/GBA-arm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/GBA-arm.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/GBA-arm.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/GBA-arm.cpp
 
@@ -488,7 +511,7 @@ CMakeFiles/atlantis.dir/src/gba/GBA-arm.cpp.o.provides.build: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/gba/gbafilter.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/gbafilter.cpp.o: src/gba/gbafilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/gbafilter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/gbafilter.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/gbafilter.cpp
 
@@ -511,7 +534,7 @@ CMakeFiles/atlantis.dir/src/gba/gbafilter.cpp.o.provides.build: CMakeFiles/atlan
 
 CMakeFiles/atlantis.dir/src/gba/Globals.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Globals.cpp.o: src/gba/Globals.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Globals.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Globals.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Globals.cpp
 
@@ -534,7 +557,7 @@ CMakeFiles/atlantis.dir/src/gba/Globals.cpp.o.provides.build: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/gba/Mode0.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Mode0.cpp.o: src/gba/Mode0.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Mode0.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Mode0.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Mode0.cpp
 
@@ -557,7 +580,7 @@ CMakeFiles/atlantis.dir/src/gba/Mode0.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/Mode1.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Mode1.cpp.o: src/gba/Mode1.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Mode1.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Mode1.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Mode1.cpp
 
@@ -580,7 +603,7 @@ CMakeFiles/atlantis.dir/src/gba/Mode1.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/Mode2.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Mode2.cpp.o: src/gba/Mode2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Mode2.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Mode2.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Mode2.cpp
 
@@ -603,7 +626,7 @@ CMakeFiles/atlantis.dir/src/gba/Mode2.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/Mode3.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Mode3.cpp.o: src/gba/Mode3.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Mode3.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Mode3.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Mode3.cpp
 
@@ -626,7 +649,7 @@ CMakeFiles/atlantis.dir/src/gba/Mode3.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/Mode4.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Mode4.cpp.o: src/gba/Mode4.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Mode4.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Mode4.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Mode4.cpp
 
@@ -649,7 +672,7 @@ CMakeFiles/atlantis.dir/src/gba/Mode4.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/Mode5.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Mode5.cpp.o: src/gba/Mode5.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Mode5.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Mode5.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Mode5.cpp
 
@@ -672,7 +695,7 @@ CMakeFiles/atlantis.dir/src/gba/Mode5.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/RTC.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/RTC.cpp.o: src/gba/RTC.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/RTC.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/RTC.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/RTC.cpp
 
@@ -695,7 +718,7 @@ CMakeFiles/atlantis.dir/src/gba/RTC.cpp.o.provides.build: CMakeFiles/atlantis.di
 
 CMakeFiles/atlantis.dir/src/gba/Sound.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Sound.cpp.o: src/gba/Sound.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Sound.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Sound.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Sound.cpp
 
@@ -718,7 +741,7 @@ CMakeFiles/atlantis.dir/src/gba/Sound.cpp.o.provides.build: CMakeFiles/atlantis.
 
 CMakeFiles/atlantis.dir/src/gba/Sram.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/Sram.cpp.o: src/gba/Sram.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/Sram.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/Sram.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/Sram.cpp
 
@@ -741,7 +764,7 @@ CMakeFiles/atlantis.dir/src/gba/Sram.cpp.o.provides.build: CMakeFiles/atlantis.d
 
 CMakeFiles/atlantis.dir/src/gb/GB.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/GB.cpp.o: src/gb/GB.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/GB.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/GB.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/GB.cpp
 
@@ -764,7 +787,7 @@ CMakeFiles/atlantis.dir/src/gb/GB.cpp.o.provides.build: CMakeFiles/atlantis.dir/
 
 CMakeFiles/atlantis.dir/src/gb/gbCheats.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbCheats.cpp.o: src/gb/gbCheats.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbCheats.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbCheats.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbCheats.cpp
 
@@ -787,7 +810,7 @@ CMakeFiles/atlantis.dir/src/gb/gbCheats.cpp.o.provides.build: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/gb/gbDis.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbDis.cpp.o: src/gb/gbDis.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbDis.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbDis.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbDis.cpp
 
@@ -810,7 +833,7 @@ CMakeFiles/atlantis.dir/src/gb/gbDis.cpp.o.provides.build: CMakeFiles/atlantis.d
 
 CMakeFiles/atlantis.dir/src/gb/gbGfx.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbGfx.cpp.o: src/gb/gbGfx.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbGfx.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbGfx.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbGfx.cpp
 
@@ -833,7 +856,7 @@ CMakeFiles/atlantis.dir/src/gb/gbGfx.cpp.o.provides.build: CMakeFiles/atlantis.d
 
 CMakeFiles/atlantis.dir/src/gb/gbGlobals.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbGlobals.cpp.o: src/gb/gbGlobals.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbGlobals.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbGlobals.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbGlobals.cpp
 
@@ -856,7 +879,7 @@ CMakeFiles/atlantis.dir/src/gb/gbGlobals.cpp.o.provides.build: CMakeFiles/atlant
 
 CMakeFiles/atlantis.dir/src/gb/gbMemory.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbMemory.cpp.o: src/gb/gbMemory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbMemory.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbMemory.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbMemory.cpp
 
@@ -879,7 +902,7 @@ CMakeFiles/atlantis.dir/src/gb/gbMemory.cpp.o.provides.build: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/gb/gbPrinter.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbPrinter.cpp.o: src/gb/gbPrinter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbPrinter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbPrinter.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbPrinter.cpp
 
@@ -902,7 +925,7 @@ CMakeFiles/atlantis.dir/src/gb/gbPrinter.cpp.o.provides.build: CMakeFiles/atlant
 
 CMakeFiles/atlantis.dir/src/gb/gbSGB.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbSGB.cpp.o: src/gb/gbSGB.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbSGB.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbSGB.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbSGB.cpp
 
@@ -925,7 +948,7 @@ CMakeFiles/atlantis.dir/src/gb/gbSGB.cpp.o.provides.build: CMakeFiles/atlantis.d
 
 CMakeFiles/atlantis.dir/src/gb/gbSound.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gb/gbSound.cpp.o: src/gb/gbSound.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gb/gbSound.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gb/gbSound.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gb/gbSound.cpp
 
@@ -948,7 +971,7 @@ CMakeFiles/atlantis.dir/src/gb/gbSound.cpp.o.provides.build: CMakeFiles/atlantis
 
 CMakeFiles/atlantis.dir/src/apu/Blip_Buffer.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/apu/Blip_Buffer.cpp.o: src/apu/Blip_Buffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/apu/Blip_Buffer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/apu/Blip_Buffer.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/apu/Blip_Buffer.cpp
 
@@ -971,7 +994,7 @@ CMakeFiles/atlantis.dir/src/apu/Blip_Buffer.cpp.o.provides.build: CMakeFiles/atl
 
 CMakeFiles/atlantis.dir/src/apu/Effects_Buffer.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/apu/Effects_Buffer.cpp.o: src/apu/Effects_Buffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/apu/Effects_Buffer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/apu/Effects_Buffer.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/apu/Effects_Buffer.cpp
 
@@ -994,7 +1017,7 @@ CMakeFiles/atlantis.dir/src/apu/Effects_Buffer.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/atlantis.dir/src/apu/Gb_Apu.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/apu/Gb_Apu.cpp.o: src/apu/Gb_Apu.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/apu/Gb_Apu.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/apu/Gb_Apu.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/apu/Gb_Apu.cpp
 
@@ -1017,7 +1040,7 @@ CMakeFiles/atlantis.dir/src/apu/Gb_Apu.cpp.o.provides.build: CMakeFiles/atlantis
 
 CMakeFiles/atlantis.dir/src/apu/Gb_Apu_State.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/apu/Gb_Apu_State.cpp.o: src/apu/Gb_Apu_State.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/apu/Gb_Apu_State.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/apu/Gb_Apu_State.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/apu/Gb_Apu_State.cpp
 
@@ -1040,7 +1063,7 @@ CMakeFiles/atlantis.dir/src/apu/Gb_Apu_State.cpp.o.provides.build: CMakeFiles/at
 
 CMakeFiles/atlantis.dir/src/apu/Gb_Oscs.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/apu/Gb_Oscs.cpp.o: src/apu/Gb_Oscs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/apu/Gb_Oscs.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/apu/Gb_Oscs.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/apu/Gb_Oscs.cpp
 
@@ -1063,7 +1086,7 @@ CMakeFiles/atlantis.dir/src/apu/Gb_Oscs.cpp.o.provides.build: CMakeFiles/atlanti
 
 CMakeFiles/atlantis.dir/src/apu/Multi_Buffer.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/apu/Multi_Buffer.cpp.o: src/apu/Multi_Buffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/apu/Multi_Buffer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/apu/Multi_Buffer.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/apu/Multi_Buffer.cpp
 
@@ -1086,7 +1109,7 @@ CMakeFiles/atlantis.dir/src/apu/Multi_Buffer.cpp.o.provides.build: CMakeFiles/at
 
 CMakeFiles/atlantis.dir/src/filters/2xSaI.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/2xSaI.cpp.o: src/filters/2xSaI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/2xSaI.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/2xSaI.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/2xSaI.cpp
 
@@ -1109,7 +1132,7 @@ CMakeFiles/atlantis.dir/src/filters/2xSaI.cpp.o.provides.build: CMakeFiles/atlan
 
 CMakeFiles/atlantis.dir/src/filters/admame.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/admame.cpp.o: src/filters/admame.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/admame.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/admame.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/admame.cpp
 
@@ -1132,7 +1155,7 @@ CMakeFiles/atlantis.dir/src/filters/admame.cpp.o.provides.build: CMakeFiles/atla
 
 CMakeFiles/atlantis.dir/src/filters/bilinear.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/bilinear.cpp.o: src/filters/bilinear.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/bilinear.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/bilinear.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/bilinear.cpp
 
@@ -1155,7 +1178,7 @@ CMakeFiles/atlantis.dir/src/filters/bilinear.cpp.o.provides.build: CMakeFiles/at
 
 CMakeFiles/atlantis.dir/src/filters/hq2x.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/hq2x.cpp.o: src/filters/hq2x.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/hq2x.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/hq2x.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/hq2x.cpp
 
@@ -1178,7 +1201,7 @@ CMakeFiles/atlantis.dir/src/filters/hq2x.cpp.o.provides.build: CMakeFiles/atlant
 
 CMakeFiles/atlantis.dir/src/filters/interframe.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/interframe.cpp.o: src/filters/interframe.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/interframe.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/interframe.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/interframe.cpp
 
@@ -1201,7 +1224,7 @@ CMakeFiles/atlantis.dir/src/filters/interframe.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/atlantis.dir/src/filters/pixel.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/pixel.cpp.o: src/filters/pixel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/pixel.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/pixel.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/pixel.cpp
 
@@ -1224,7 +1247,7 @@ CMakeFiles/atlantis.dir/src/filters/pixel.cpp.o.provides.build: CMakeFiles/atlan
 
 CMakeFiles/atlantis.dir/src/filters/scanline.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/scanline.cpp.o: src/filters/scanline.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/scanline.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/scanline.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/scanline.cpp
 
@@ -1247,7 +1270,7 @@ CMakeFiles/atlantis.dir/src/filters/scanline.cpp.o.provides.build: CMakeFiles/at
 
 CMakeFiles/atlantis.dir/src/filters/simpleFilter.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/simpleFilter.cpp.o: src/filters/simpleFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/simpleFilter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/simpleFilter.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/simpleFilter.cpp
 
@@ -1270,7 +1293,7 @@ CMakeFiles/atlantis.dir/src/filters/simpleFilter.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/atlantis.dir/src/filters/hq/c/hq_implementation.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/filters/hq/c/hq_implementation.cpp.o: src/filters/hq/c/hq_implementation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/filters/hq/c/hq_implementation.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/filters/hq/c/hq_implementation.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/filters/hq/c/hq_implementation.cpp
 
@@ -1293,7 +1316,7 @@ CMakeFiles/atlantis.dir/src/filters/hq/c/hq_implementation.cpp.o.provides.build:
 
 CMakeFiles/atlantis.dir/src/gba/armdis.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/armdis.cpp.o: src/gba/armdis.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/armdis.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/armdis.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/armdis.cpp
 
@@ -1316,7 +1339,7 @@ CMakeFiles/atlantis.dir/src/gba/armdis.cpp.o.provides.build: CMakeFiles/atlantis
 
 CMakeFiles/atlantis.dir/src/gba/elf.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/elf.cpp.o: src/gba/elf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/elf.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/elf.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/elf.cpp
 
@@ -1339,7 +1362,7 @@ CMakeFiles/atlantis.dir/src/gba/elf.cpp.o.provides.build: CMakeFiles/atlantis.di
 
 CMakeFiles/atlantis.dir/src/gba/remote.cpp.o: CMakeFiles/atlantis.dir/flags.make
 CMakeFiles/atlantis.dir/src/gba/remote.cpp.o: src/gba/remote.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/james/Documents/Development/cpython/libatlantis/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/atlantis.dir/src/gba/remote.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/atlantis.dir/src/gba/remote.cpp.o -c /home/james/Documents/Development/cpython/libatlantis/src/gba/remote.cpp
 
@@ -1363,8 +1386,9 @@ CMakeFiles/atlantis.dir/src/gba/remote.cpp.o.provides.build: CMakeFiles/atlantis
 # Object files for target atlantis
 atlantis_OBJECTS = \
 "CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o" \
-"CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o" \
+"CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o" \
 "CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o" \
+"CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o" \
 "CMakeFiles/atlantis.dir/src/Util.cpp.o" \
 "CMakeFiles/atlantis.dir/src/common/Patch.cpp.o" \
 "CMakeFiles/atlantis.dir/src/common/memgzio.c.o" \
@@ -1424,8 +1448,9 @@ atlantis_OBJECTS = \
 atlantis_EXTERNAL_OBJECTS =
 
 libatlantis.so: CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o
-libatlantis.so: CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o
+libatlantis.so: CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o
 libatlantis.so: CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o
+libatlantis.so: CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o
 libatlantis.so: CMakeFiles/atlantis.dir/src/Util.cpp.o
 libatlantis.so: CMakeFiles/atlantis.dir/src/common/Patch.cpp.o
 libatlantis.so: CMakeFiles/atlantis.dir/src/common/memgzio.c.o
@@ -1501,8 +1526,9 @@ CMakeFiles/atlantis.dir/build: libatlantis.so
 .PHONY : CMakeFiles/atlantis.dir/build
 
 CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/atlantis/atlantis.cpp.o.requires
-CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/atlantis/joypad.cpp.o.requires
+CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/atlantis/input.cpp.o.requires
 CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/atlantis/callback.cpp.o.requires
+CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/atlantis/memory.cpp.o.requires
 CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/Util.cpp.o.requires
 CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/common/Patch.cpp.o.requires
 CMakeFiles/atlantis.dir/requires: CMakeFiles/atlantis.dir/src/common/memgzio.c.o.requires

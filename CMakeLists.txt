@@ -321,14 +321,17 @@ SET(SRC_SDL
 
 SET(SRC_ATLANTIS
     src/atlantis/atlantis.cpp
-	src/atlantis/joypad.cpp
+	src/atlantis/input.cpp
 	src/atlantis/callback.cpp
+	src/atlantis/memory.cpp
 )
 
 SET(SRC_ATLANTIS_PYTHON
     src/python/surface.cpp
     src/python/module.cpp
     src/python/emulator.cpp
+    src/python/input.cpp
+    src/python/debugger.cpp
 )
 
 

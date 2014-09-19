@@ -55,8 +55,13 @@ extern const char *MakeInstanceFilename(const char *Input);
 
 #ifndef NO_LINK
 // Link implementation
+
+#ifdef FAKE_SFML
+#include <fakesfml/fake.h>
+#else
 #include <SFML/System.hpp>
 #include <SFML/Network.hpp>
+#endif
 
 class ServerInfoDisplay
 {
